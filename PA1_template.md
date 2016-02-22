@@ -5,6 +5,7 @@
 
 ```r
 library(ggplot2)
+library(knitr)
 library(scales)
 library(Hmisc)
 ```
@@ -13,7 +14,7 @@ library(Hmisc)
 ```r
 ## Reading the activity file from a working directory.
 
-setwd("~/Documents/Coursera/Data Science/05 - Reproducible Research/Project 1")
+setwd("~/datasciencecoursera/RepData_PeerAssessment1")
 activity <- read.table("activity.csv", header = TRUE, sep = ",")
 ```
 

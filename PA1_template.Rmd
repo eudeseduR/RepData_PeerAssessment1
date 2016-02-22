@@ -9,6 +9,7 @@ output:
 
 ```{r, echo = TRUE, results = 'hide', warning = FALSE, message = FALSE}
 library(ggplot2)
+library(knitr)
 library(scales)
 library(Hmisc)
 ```
@@ -16,14 +17,14 @@ library(Hmisc)
 ```{r, echo = TRUE}
 ## Reading the activity file from a working directory.
 
-setwd("~/Documents/Coursera/Data Science/05 - Reproducible Research/Project 1")
+setwd("~/datasciencecoursera/RepData_PeerAssessment1")
 activity <- read.table("activity.csv", header = TRUE, sep = ",")
 ```
 
 
 ## What is mean total number of steps taken per day?
 
-```{r, echo = TRUE, fig.align = 'center'}
+```{r, fig.align = 'center'}
 ## Making a histogram of the total number of steps per day.
 
 StepsByDay <- aggregate(steps ~ date, activity, sum, na.rm = TRUE)
@@ -38,7 +39,7 @@ print(paste("The mean is", round(mean(StepsByDay$steps)),
 
 ## What is the average daily activity pattern?
 
-```{r, echo = TRUE, fig.align = 'center'}
+```{r, fig.align = 'center'}
 
 ## Calculating the average number of steps taken.
 
@@ -53,14 +54,14 @@ plot(StepsInterval$interval, StepsInterval$steps,
 
 ## Imputing missing values
 
-```{r, echo = TRUE}
+```{r}
 ## Calculating and reporting dataset missing values. 
 
 print(length(which(is.na(activity$steps))))
 
 ```
 
-```{r, echo = TRUE, fig.align = 'center'}
+```{r, fig.align = 'center'}
 ## Making a histogram of the total number of steps per day for the new dataset.
 
 stepsByDayImputed <- tapply(impute(activity$steps, fun=mean), activity$date, sum)
@@ -75,7 +76,7 @@ print(median(stepsByDayImputed))
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
-```{r, echo = TRUE, fig.align = 'center'}
+```{r, fig.align = 'center'}
 ## Creating a new variable in the dataset with two levels -- "weekday" and "weekend".
 
 activity$date <- ifelse(as.POSIXlt(activity$date)$wday %in% c(0,6), 'weekend', 'weekday')
