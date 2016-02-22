@@ -3,10 +3,14 @@ output: pdf_document
 ---
 # Reproducible Research: Peer Assessment 1
 
-
-
-
 ## Loading and preprocessing the data
+
+
+```r
+library(ggplot2)
+library(scales)
+library(Hmisc)
+```
 
 
 ```r

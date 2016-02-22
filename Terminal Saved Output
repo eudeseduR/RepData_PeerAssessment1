@@ -1,0 +1,145 @@
+Last login: Mon Feb 22 00:30:40 on ttys000
+MacBook-Air-de-Eudes:~ eudeseduardo$ cd datasciencecoursera
+MacBook-Air-de-Eudes:datasciencecoursera eudeseduardo$ ls
+Exploratory-Data-Analysis
+Getting-and-Cleaning-Data
+HelloWorld.html
+HelloWorld.md
+ProgrammingAssignment2
+README.html
+README.md
+RepData_PeerAssessment1
+Reproducible-Research
+coursera-reproducible-research-peer-assessment1
+datasharing
+MacBook-Air-de-Eudes:datasciencecoursera eudeseduardo$ cd RepData_PeerAssessment1
+MacBook-Air-de-Eudes:RepData_PeerAssessment1 eudeseduardo$ ls
+PA1_template.Rmd	PA1_template_files	doc
+PA1_template.html	README.md		instructions_fig
+PA1_template.md		activity.csv
+PA1_template.pdf	activity.zip
+MacBook-Air-de-Eudes:RepData_PeerAssessment1 eudeseduardo$ git status
+xcode-select: note: no developer tools were found at '/Applications/Xcode.app', requesting install. Choose an option in the dialog to download the command line developer tools.
+MacBook-Air-de-Eudes:RepData_PeerAssessment1 eudeseduardo$ alias git="/usr/local/git/bin/git"
+MacBook-Air-de-Eudes:RepData_PeerAssessment1 eudeseduardo$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   PA1_template.Rmd
+	modified:   PA1_template.html
+	modified:   PA1_template.md
+	new file:   PA1_template_files/figure-html/unnamed-chunk-2-1.png
+	new file:   PA1_template_files/figure-html/unnamed-chunk-3-1.png
+	new file:   PA1_template_files/figure-html/unnamed-chunk-4-1.png
+	new file:   PA1_template_files/figure-html/unnamed-chunk-5-1.png
+	new file:   PA1_template_files/figure-html/unnamed-chunk-6-1.png
+	new file:   PA1_template_files/figure-html/unnamed-chunk-7-1.png
+
+MacBook-Air-de-Eudes:RepData_PeerAssessment1 eudeseduardo$ git push
+remote: Permission to rdpeng/RepData_PeerAssessment1.git denied to eudeseduR.
+fatal: unable to access 'https://github.com/rdpeng/RepData_PeerAssessment1.git/': The requested URL returned error: 403
+MacBook-Air-de-Eudes:RepData_PeerAssessment1 eudeseduardo$ git push https://github.com/eudeseduR/RepData_PeerAssessment1.git
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 476.09 KiB | 0 bytes/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+To https://github.com/eudeseduR/RepData_PeerAssessment1.git
+   80edf39..40e5bfc  master -> master
+MacBook-Air-de-Eudes:RepData_PeerAssessment1 eudeseduardo$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   PA1_template.Rmd
+	modified:   PA1_template.html
+	modified:   PA1_template.md
+	new file:   PA1_template_files/figure-html/unnamed-chunk-2-1.png
+	new file:   PA1_template_files/figure-html/unnamed-chunk-3-1.png
+	new file:   PA1_template_files/figure-html/unnamed-chunk-4-1.png
+	new file:   PA1_template_files/figure-html/unnamed-chunk-5-1.png
+	new file:   PA1_template_files/figure-html/unnamed-chunk-6-1.png
+	new file:   PA1_template_files/figure-html/unnamed-chunk-7-1.png
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   PA1_template.md
+	modified:   PA1_template.pdf
+	deleted:    PA1_template_files/figure-html/unnamed-chunk-2-1.png
+	deleted:    PA1_template_files/figure-html/unnamed-chunk-3-1.png
+	deleted:    PA1_template_files/figure-html/unnamed-chunk-4-1.png
+	deleted:    PA1_template_files/figure-html/unnamed-chunk-5-1.png
+	deleted:    PA1_template_files/figure-html/unnamed-chunk-6-1.png
+	deleted:    PA1_template_files/figure-html/unnamed-chunk-7-1.png
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.Rhistory
+
+MacBook-Air-de-Eudes:RepData_PeerAssessment1 eudeseduardo$ git add .
+MacBook-Air-de-Eudes:RepData_PeerAssessment1 eudeseduardo$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .Rhistory
+	modified:   PA1_template.Rmd
+	modified:   PA1_template.html
+	modified:   PA1_template.md
+	modified:   PA1_template.pdf
+
+MacBook-Air-de-Eudes:RepData_PeerAssessment1 eudeseduardo$ git push https://github.com/eudeseduR/RepData_PeerAssessment1.git
+
+^[[AEverything up-to-date
+MacBook-Air-de-Eudes:RepData_PeerAssessment1 eudeseduardo$ 
+MacBook-Air-de-Eudes:RepData_PeerAssessment1 eudeseduardo$ git push https://github.com/eudeseduR/RepData_PeerAssessment1.git
+Everything up-to-date
+MacBook-Air-de-Eudes:RepData_PeerAssessment1 eudeseduardo$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .Rhistory
+	modified:   PA1_template.Rmd
+	modified:   PA1_template.html
+	modified:   PA1_template.md
+	modified:   PA1_template.pdf
+
+MacBook-Air-de-Eudes:RepData_PeerAssessment1 eudeseduardo$ git git commit -m "Peer Assessment 1 for Reproducible Research"
+git: 'git' is not a git command. See 'git --help'.
+
+Did you mean this?
+	init
+MacBook-Air-de-Eudes:RepData_PeerAssessment1 eudeseduardo$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .Rhistory
+	modified:   PA1_template.Rmd
+	modified:   PA1_template.html
+	modified:   PA1_template.md
+	modified:   PA1_template.pdf
+
+MacBook-Air-de-Eudes:RepData_PeerAssessment1 eudeseduardo$ git git commit -m
+git: 'git' is not a git command. See 'git --help'.
+
+Did you mean this?
+	init
+MacBook-Air-de-Eudes:RepData_PeerAssessment1 eudeseduardo$ git push https://github.com/eudeseduR/RepData_PeerAssessment1.git
+Everything up-to-date
+MacBook-Air-de-Eudes:RepData_PeerAssessment1 eudeseduardo$ 
